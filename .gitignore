@@ -1,0 +1,6 @@
+.idea
+__pycache__
+*.pyc
+poetry.lock
+spectrum_cache.sqlite
+spectrum-*.yaml

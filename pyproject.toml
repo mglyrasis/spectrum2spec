@@ -1,0 +1,37 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+force_single_line = "true"
+multi_line_output = 3
+include_trailing_comma = "true"
+force_grid_wrap = 0
+use_parentheses = "true"
+line_length = 120
+profile = "black"
+
+[tool.poetry]
+name = "spectrum"
+version = "0.1.0"
+description = ""
+authors = ["mglyrasis"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = {version = "^2.0a4", allow-prereleases = true}
+requests = "^2.30.0"
+bs4 = "^0.0.1"
+requests-cache = "^1.0.1"
+pyyaml = "^6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+black = "^23.3.0"
+isort = "^5.12.0"
+pre-commit = "^3.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
